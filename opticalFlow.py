@@ -9,8 +9,6 @@ import cv2  # OpenCV module
 import time
 import math
 
-
-
 global firstTime, old_gray, p0, lk_params, mask, color
 firstTime = True
 old_gray = None

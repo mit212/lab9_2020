@@ -14,12 +14,12 @@ from tkinter import *
 global tk
 tk = Tk()
 global lower, upper, inters
-lower = Scale(tk, from_ = 1, to = 1500, label = 'Canny Edge lower threshold', orient = HORIZONTAL)
+lower = Scale(tk, from_ = 1, to = 1500, label = 'lower threshold', orient = HORIZONTAL)
 lower.pack()
-upper = Scale(tk, from_ = 1, to = 1000, label = 'Canny Edge upper threshold', orient = HORIZONTAL)
+upper = Scale(tk, from_ = 1, to = 1000, label = 'upper threshold', orient = HORIZONTAL)
 upper.pack()
 upper.set(1000)
-inters = Scale(tk, from_ = 1, to = 1000, label = 'Min Number of Intersections', orient = HORIZONTAL)
+inters = Scale(tk, from_ = 1, to = 1000, label = 'Min Intersections', orient = HORIZONTAL)
 inters.pack()
 inters.set(50)
 

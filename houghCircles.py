@@ -14,13 +14,15 @@ from tkinter import *
 global tk
 tk = Tk()
 global canny, center, dist, d_p
-canny = Scale(tk, from_ = 1, to = 1500, label = 'Canny Edge Upper threshold', orient = HORIZONTAL)
+canny = Scale(tk, from_ = 1, to = 1500, label = 'Upper threshold', orient = HORIZONTAL)
 canny.pack()
-center = Scale(tk, from_ = 1, to = 1000, label = 'Center Detection Threshold', orient = HORIZONTAL)
+canny.set(200)
+center = Scale(tk, from_ = 1, to = 1000, label = 'Center Threshold', orient = HORIZONTAL)
 center.pack()
-dist = Scale(tk, from_ = 1, to = 1000, label = 'Min distance between centers', orient = HORIZONTAL)
+center.set(100)
+dist = Scale(tk, from_ = 1, to = 1000, label = 'Min Centers dist', orient = HORIZONTAL)
 dist.pack()
-d_p = Scale(tk, from_ = 0.1, to = 5, label = 'Circle deformation allowance', orient = HORIZONTAL, resolution = 0.01)
+d_p = Scale(tk, from_ = 0.1, to = 5, label = 'Accumulator Ratio', orient = HORIZONTAL, resolution = 0.01)
 d_p.pack()
 d_p.set(4)
 def main():

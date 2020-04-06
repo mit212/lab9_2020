@@ -16,7 +16,7 @@ from tkinter import *
 global tk
 tk = Tk()
 global g
-g= Scale(tk, from_ = 0.01, to = 5, label = 'Gamma', orient = HORIZONTAL, resolution = 0.01)
+g= Scale(tk, from_ = 0.01, to = 10, label = 'Gamma', orient = HORIZONTAL, resolution = 0.01)
 g.pack()
 def main():
     # Open up the webcam

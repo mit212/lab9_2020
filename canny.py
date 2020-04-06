@@ -34,7 +34,8 @@ def main():
         lower_threshold = l_b.get()
         upper_threshold = u_b.get()
         grayIm = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
-        cannyIm = cv2.Canny(grayIm, lower_threshold, upper_threshold,apertureSize = 3)
+
+        cannyIm = cv2.Canny(grayIm, lower_threshold, upper_threshold, apertureSize = 3)
         cv2.imshow("Canny_Image", cannyIm)
         cv2.waitKey(3)
         time.sleep(0.02)
