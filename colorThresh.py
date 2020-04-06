@@ -4,7 +4,6 @@
 
 import numpy as np
 import cv2  # OpenCV module
-from matplotlib import pyplot as plt
 import time
 from tkinter import *
 import threading
