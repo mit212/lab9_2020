@@ -66,7 +66,7 @@ def main():
         # EXAMPLE OF A VERTICAL LINE:
         #kernel = np.array([[0, 1, 0, 0],\
         #                [0, 1, 0, 0 ],\
-        #                [0, 1, 0, 0 ],\
+        #                [1, 1, 1, 1 ],\
         #                [0, 1, 0, 0]], dtype=np.uint8)
         
         #TODO: Change number of iterations to see the effect.
